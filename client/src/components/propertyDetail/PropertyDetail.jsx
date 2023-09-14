@@ -139,7 +139,7 @@ const PropertyDetail = () => {
           <div className={classes.details}>
             <div className={classes.typeAndContinent}>
               <div>Type: <span>{`${propertyDetail?.type}`}</span></div>
-              <div>Continent: <span>{`${propertyDetail?.continent}`}</span></div>
+              <div>State: <span>{`${propertyDetail?.continent}`}</span></div>
             </div>
             <div className={classes.priceAndOwner}>
               <span className={classes.price}><span>Price: ₹ </span>{`${propertyDetail?.price}`}</span>
