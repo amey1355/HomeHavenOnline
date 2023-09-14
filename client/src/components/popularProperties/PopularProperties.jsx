@@ -44,7 +44,7 @@ const PopularProperties = () => {
           <Link to={`/properties?type=mountain&continent=1&priceRange=1`} className={classes.property}>
             <img src={img2} />
             <div className={classes.quantity}>{mountainProperties} properties</div>
-            <h5>City properties</h5>
+            <h5>Mountain properties</h5>
           </Link>
           <Link to={`/properties?type=village&continent=2&priceRange=1`} className={classes.property}>
             <img src={img3} />
