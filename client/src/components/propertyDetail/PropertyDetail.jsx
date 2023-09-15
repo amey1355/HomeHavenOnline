@@ -12,6 +12,7 @@ import { FaBed, FaSquareFull } from 'react-icons/fa'
 import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs'
 import { useRef } from 'react'
 import Comment from '../comment/Comment'
+import LoanCalculator from '../calci/LoanCalculator'
 
 const PropertyDetail = () => {
   const { token, user } = useSelector((state) => state.auth)
@@ -27,7 +28,7 @@ const PropertyDetail = () => {
   const { id } = useParams()
   const formRef = useRef()
   const navigate = useNavigate()
-
+  const propertyPrice = propertyDetail?.price || 0;
   useEffect(() => {
     const fetchDetails = async () => {
       try {
@@ -155,6 +156,7 @@ const PropertyDetail = () => {
               <span>{propertyDetail?.beds} <FaBed className={classes.icon} /></span>
               <span>{propertyDetail?.sqmeters} square meters <FaSquareFull className={classes.icon} /></span>
             </div>
+            <LoanCalculator propertyPrice={propertyPrice} />
           </div>
           <p className={classes.desc}>
             Desc: <span>{`${propertyDetail?.desc}`}</span>

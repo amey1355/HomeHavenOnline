@@ -1,17 +1,31 @@
 import React, { useState } from 'react';
 import './LoanCalculator.css'; // Import your CSS file
 
-const LoanCalculator = () => {
+const LoanCalculator = ({ propertyPrice }) => {
   const [salary, setSalary] = useState('');
   const [age, setAge] = useState('');
   const [occupation, setOccupation] = useState('');
   const [loanAmount, setLoanAmount] = useState(null);
 
   const calculateLoanAmount = () => {
-    // Loan calculation logic here
-    // For simplicity, let's say loan amount = salary * 5
-    const calculatedLoanAmount = parseFloat(salary) * 5;
-    setLoanAmount(calculatedLoanAmount);
+    // Convert salary to a number
+    const annualSalary = parseFloat(salary);
+
+    // Check the age range and calculate the loan amount accordingly
+    let calculatedLoanAmount = 0;
+    if (age >= 18 && age <= 30) {
+      calculatedLoanAmount = annualSalary * 3;
+    } else if (age >= 31 && age <= 50) {
+      calculatedLoanAmount = annualSalary * 5;
+    } else if (age >= 51) {
+      calculatedLoanAmount = annualSalary * 2;
+    }
+
+    // Calculate the loan based on property price (e.g., 80% of property price)
+    const loanBasedOnProperty = propertyPrice * 0.8;
+
+    // Set the calculated loan amount, considering the property price
+    setLoanAmount(Math.min(calculatedLoanAmount, loanBasedOnProperty));
   };
 
   return (
@@ -47,7 +61,7 @@ const LoanCalculator = () => {
       <button onClick={calculateLoanAmount}>Calculate Loan</button>
       {loanAmount !== null && (
         <div className="result">
-          <p>Maximum Loan Amount: ${loanAmount}</p>
+          <p>Maximum Loan Amount: ₹{loanAmount}</p>
         </div>
       )}
     </div>
