@@ -6,15 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 cd client
 npx create-react-app ./
 npm install
-npm install axios@1.3.5 react@18.2.0 react-dom@18.2.0 react-icons@4.7.1 react-redux@8.0.5 react-router-dom@6.8.1 react-scripts@5.0.1 react-spinners@0.13.8 redux-persist@6.0.0 timeago.js@4.0.2
-npm i @emailjs/browser@^3.10.0 @reduxjs/toolkit@^1.9.2
 npm start
 
 # Backend HouseHavenOnline: -
 cd backend
-npm i nodemon
-npm i dotenv cors mongoose express
-npm i jsonwebtoken bcrypt multer
+npm install
 npm start
 
 ## Available Scripts
