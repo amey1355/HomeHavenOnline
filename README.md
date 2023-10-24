@@ -9,8 +9,11 @@ npm install
 npm start
 
 # Backend HouseHavenOnline: -
+
 cd backend
+
 npm install
+
 npm start
 
 ## Available Scripts
