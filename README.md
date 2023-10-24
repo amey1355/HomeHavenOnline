@@ -1,9 +1,9 @@
 
 # Frontend HouseHavenOnline: -
 ### `cd client`
-###npx create-react-app ./
-###npm install
-###npm start
+### `npx create-react-app ./`
+### `npm install`
+### `npm start`
 
 # Backend HouseHavenOnline: -
 
