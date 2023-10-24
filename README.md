@@ -7,9 +7,9 @@
 
 # Backend HouseHavenOnline: -
 
-cd backend
+### `cd backend`
 
-npm install
+### `npm install`
 
 
 ## Available Scripts
