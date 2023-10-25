@@ -62,7 +62,7 @@ const PropertyDetail = () => {
   const handleContactOwner = async (e) => {
     e.preventDefault()
 
-    emailjs.sendForm("service_mjoebse", "template_w5mthmm", formRef.current, '5T3Wb_hkHjKTOJDYQ')
+    emailjs.sendForm("service_k28qbjb", "template_rgnyahb", formRef.current, 'krJCf-vUPOTcc5o0x')
       .then((result) => {
         handleCloseForm()
         setSuccess(true)
@@ -73,6 +73,20 @@ const PropertyDetail = () => {
         console.log(error.text);
       });
   }
+  // const handleContactOwner = async (e) => {
+  //   e.preventDefault()
+
+  //   emailjs.sendForm("service_mjoebse", "template_w5mthmm", formRef.current, '5T3Wb_hkHjKTOJDYQ')
+  //     .then((result) => {
+  //       handleCloseForm()
+  //       setSuccess(true)
+  //       setTimeout(() => {
+  //         setSuccess(false)
+  //       }, 2500)
+  //     }, (error) => {
+  //       console.log(error.text);
+  //     });
+  // }
 
   const handleDelete = async () => {
     try {
@@ -156,7 +170,7 @@ const PropertyDetail = () => {
               <span>{propertyDetail?.beds} <FaBed className={classes.icon} /></span>
               <span>{propertyDetail?.sqmeters} square meters <FaSquareFull className={classes.icon} /></span>
             </div>
-            <LoanCalculator propertyPrice={propertyPrice} />
+            {/* <LoanCalculator propertyPrice={propertyPrice} /> */}
           </div>
           <p className={classes.desc}>
             Desc: <span>{`${propertyDetail?.desc}`}</span>

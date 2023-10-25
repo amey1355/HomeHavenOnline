@@ -153,17 +153,43 @@ propertyController.put('/bookmark/:id', verifyToken, async (req, res) => {
 // delete estate
 propertyController.delete('/:id', verifyToken, async (req, res) => {
     try {
-        const property = await Property.findById(req.params.id)
-        if (property.currentOwner.toString() !== req.user.id) {
-            throw new Error("You are not allowed to delete other people properties")
+        const property = await Property.findById(req.params.id);
+
+        // Check if property exists
+        if (!property) {
+            return res.status(404).json({ error: "Property not found" });
         }
 
-        await property.delete()
+        // Check ownership
+        if (property.currentOwner.toString() !== req.user.id) {
+            throw new Error("You are not allowed to delete other people's properties");
+        }
 
-        return res.status(200).json({ msg: "Successfully deleted property" })
+        // Delete the property
+        await property.deleteOne(); // or use property.deleteOne();
+
+        return res.status(200).json({ msg: "Successfully deleted property" });
     } catch (error) {
-        return res.status(500).json(error)
+        console.error('Error deleting property:', error);
+        return res.status(500).json(error);
     }
-})
+});
+
+
+
+// propertyController.delete('/:id', verifyToken, async (req, res) => {
+//     try {
+//         const property = await Property.findById(req.params.id)
+//         if (property.currentOwner.toString() !== req.user.id) {
+//             throw new Error("You are not allowed to delete other people properties")
+//         }
+
+//         await property.delete()
+
+//         return res.status(200).json({ msg: "Successfully deleted property" })
+//     } catch (error) {
+//         return res.status(500).json(error)
+//     }
+// })
 
 module.exports = propertyController
