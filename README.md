@@ -1,6 +1,6 @@
-# HouseHavenOnline
+# HomeHavenOnline
 
-Welcome to HouseHavenOnline, your one-stop solution for buying and selling properties online!
+Welcome to HomeHavenOnline, your one-stop solution for buying and selling properties online!
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -13,7 +13,7 @@ Welcome to HouseHavenOnline, your one-stop solution for buying and selling prope
 
 ## Introduction
 
-HouseHavenOnline is a real estate platform where users can seamlessly buy and sell properties. With features like bookmarking properties and direct communication with property owners via emails, we provide a convenient and user-friendly experience.
+HomeHavenOnline is a real estate platform where users can seamlessly buy and sell properties. With features like bookmarking properties and direct communication with property owners via emails, we provide a convenient and user-friendly experience.
 
 ## Features
 
@@ -64,4 +64,4 @@ Perform CRUD operations on your properties.
 Bookmark properties for future reference.
 Contact property owners directly using the integrated email system.
 Contacting Owners
-Have questions or interested in a property? Contact the owner directly through the HouseHavenOnline email system.
+Have questions or interested in a property? Contact the owner directly through the HomeHavenOnline email system.
