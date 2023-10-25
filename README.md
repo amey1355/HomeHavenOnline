@@ -36,16 +36,12 @@ HomeHavenOnline is a modern and user-friendly real estate platform. Seamlessly b
 1. Navigate to the `client` directory:
    cd client
 
-Install dependencies:
+2. Install dependencies:
+    npm install
 
-npm install
-
-
-Start the development server:
-
-npm start
-
-Open http://localhost:3000 to view the app in your browser.
+3. Start the development server:
+    npm start
+    Open http://localhost:3000 to view the app in your browser.
 
 ## Backend Setup: -
 Navigate to the backend directory:
