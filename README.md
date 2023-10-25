@@ -41,18 +41,18 @@ HomeHavenOnline is a modern and user-friendly real estate platform. Seamlessly b
 
 3. Start the development server:
     npm start
+    
     Open http://localhost:3000 to view the app in your browser.
 
 ## Backend Setup: -
-Navigate to the backend directory:
+1. Navigate to the backend directory:
+    cd backend
 
-cd backend
-Install dependencies:
+2. Install dependencies:
+    npm install
 
-npm install
-Start the backend server:
-
-npm start
+3. Start the backend server:
+    npm start
 
 ## Usage
 Create an account or log in to get started.
@@ -61,6 +61,5 @@ Perform CRUD operations on your properties.
 Bookmark properties for future reference.
 Contact property owners directly using the integrated email system.
 
-## 
-Contacting Owners
+## Contacting Owners
 Have questions or interested in a property? Contact the owner directly through the HomeHavenOnline email system.
