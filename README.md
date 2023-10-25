@@ -15,8 +15,7 @@
   - [Backend Setup](#backend-setup)
 - [Usage](#usage)
 - [Contacting Owners](#contacting-owners)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
