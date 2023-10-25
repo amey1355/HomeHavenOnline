@@ -1,8 +1,13 @@
-# HomeHavenOnline
+<h1 align="center">HomeHavenOnline</h1>
 
-Welcome to HomeHavenOnline, your one-stop solution for buying and selling properties online!
+<p align="center">
+  <img src="your_logo.png" alt="HomeHavenOnline Logo" width="200">
+</p>
+
+<p align="center">Your one-stop solution for buying and selling properties online!</p>
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
@@ -10,54 +15,46 @@ Welcome to HomeHavenOnline, your one-stop solution for buying and selling proper
   - [Backend Setup](#backend-setup)
 - [Usage](#usage)
 - [Contacting Owners](#contacting-owners)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
-HomeHavenOnline is a real estate platform where users can seamlessly buy and sell properties. With features like bookmarking properties and direct communication with property owners via emails, we provide a convenient and user-friendly experience.
+HomeHavenOnline is a modern and user-friendly real estate platform. Seamlessly buy and sell properties, bookmark your favorites, and communicate directly with property owners.
 
 ## Features
 
-- **Property Listing:** List your properties for sale or browse through available listings.
-- **CRUD Operations:** Perform basic CRUD operations on your properties - Create, Read, Update, Delete.
-- **Bookmarking:** Users can bookmark properties they are interested in for quick access.
-- **Contact Owners:** Contact property owners directly using the integrated email system.
+- **Property Listing:** List, browse, and search for properties with ease.
+- **CRUD Operations:** Manage your properties effortlessly with Create, Read, Update, and Delete operations.
+- **Bookmarking:** Save and organize properties you're interested in.
+- **Contact Owners:** Communicate directly with property owners using our integrated email system.
 
 ## Getting Started
 
 ### Frontend Setup
 
 1. Navigate to the `client` directory:
-   ```bash
    cd client
 Install dependencies:
 
-bash
-Copy code
 npm install
 Start the development server:
 
-bash
-Copy code
 npm start
 Open http://localhost:3000 to view the app in your browser.
 
-Backend Setup
+# Backend Setup: -
 Navigate to the backend directory:
 
-bash
-Copy code
 cd backend
 Install dependencies:
 
-bash
-Copy code
 npm install
 Start the backend server:
 
-bash
-Copy code
 npm start
-Usage
+
+## Usage
 Create an account or log in to get started.
 Browse through available properties.
 Perform CRUD operations on your properties.
