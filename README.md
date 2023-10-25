@@ -1,8 +1,8 @@
 <h1 align="center">HomeHavenOnline</h1>
-
+<!-- 
 <p align="center">
   <img src="your_logo.png" alt="HomeHavenOnline Logo" width="200">
-</p>
+</p> -->
 
 <p align="center">Your one-stop solution for buying and selling properties online!</p>
 
@@ -35,15 +35,19 @@ HomeHavenOnline is a modern and user-friendly real estate platform. Seamlessly b
 
 1. Navigate to the `client` directory:
    cd client
+
 Install dependencies:
 
 npm install
+
+
 Start the development server:
 
 npm start
+
 Open http://localhost:3000 to view the app in your browser.
 
-# Backend Setup: -
+## Backend Setup: -
 Navigate to the backend directory:
 
 cd backend
@@ -60,5 +64,7 @@ Browse through available properties.
 Perform CRUD operations on your properties.
 Bookmark properties for future reference.
 Contact property owners directly using the integrated email system.
+
+## 
 Contacting Owners
 Have questions or interested in a property? Contact the owner directly through the HomeHavenOnline email system.
